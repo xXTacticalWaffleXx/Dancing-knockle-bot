@@ -1,0 +1,24 @@
+{
+  "name": "dancing-knockle-bot",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xXTacticalWaffleXx/Dancing-knockle-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xXTacticalWaffleXx/Dancing-knockle-bot/issues"
+  },
+  "homepage": "https://github.com/xXTacticalWaffleXx/Dancing-knockle-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "nodemon": "^2.0.20"
+  }
+}
