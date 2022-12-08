@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Discord bot",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xXTacticalWaffleXx/Dancing-knockle-bot.git"
@@ -17,6 +16,7 @@
   },
   "homepage": "https://github.com/xXTacticalWaffleXx/Dancing-knockle-bot#readme",
   "dependencies": {
+    "@discordjs/voice": "^0.14.0",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "nodemon": "^2.0.20"
