@@ -1,12 +1,14 @@
 const { joinVoiceChannel } = require('@discordjs/voice');
 
-function join(user, interaction) {
+function join(interaction, should_return = false) {
+  console.log(interaction.member)
+  const channel = interaction.member.voice.channel;
   const connection = joinVoiceChannel({
-	  //channelId: interaction.user.voiceChannel.id,
-	  channelId: 974058934933544975,
-	  guildId: interaction.guild.id,
-	  adapterCreator: interaction.guild.voiceAdapterCreator,
+	  channelId: channel.id,
+	  guildId: channel.guildId,
+	  adapterCreator: channel.guild.voiceAdapterCreator,
   });
+  if (should_return) return connection
 }
 
 module.exports = { join }
