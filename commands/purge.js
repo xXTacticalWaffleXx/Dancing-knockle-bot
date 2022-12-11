@@ -1,5 +1,5 @@
 const { Message } = require("discord.js");
-const { Command } = require("@src/structures");
+const { SlashCommandBuilder } = require('discord.js');
 const { purgeMessages } = require("@utils/modUtils");
 const { sendMessage } = require("@utils/botUtils");
 

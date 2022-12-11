@@ -1,4 +1,4 @@
-const { Command } = require("@src/structures");
+const { SlashCommandBuilder } = require('discord.js');
 const { Message, CommandInteraction } = require("discord.js");
 const { banTarget } = require("@utils/modUtils");
 const { resolveMember } = require("@utils/guildUtils");
