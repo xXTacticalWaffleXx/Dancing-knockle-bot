@@ -64,7 +64,7 @@ module.exports = class BanCommand extends Command {
 async function ban(issuer, target, reason) {
   const response = await banTarget(issuer, target, reason);
   if (typeof response === "boolean") return `${target.user.tag} is banned!`;
-  if (response === "BOT_PERM") return `I do not have permission to ban L bozo :sob: ${target.user.tag}`;
-  else if (response === "MEMBER_PERM") return `You do not have permission to ban ${target.user.tag}`;
+  if (response === "BOT_PERM") return `I do not have permission to ban ${target.user.tag}`;
+  else if (response === "MEMBER_PERM") return `You do not have permission to ban L bozo :sob: ${target.user.tag}`;
   else return `Failed to ban :skull: :sob: ${target.user.tag}`;
 }
