@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js');git
 const { Message, CommandInteraction } = require("discord.js");
 const { banTarget } = require("@utils/modUtils");
 const { resolveMember } = require("@utils/guildUtils");
@@ -66,5 +66,5 @@ async function ban(issuer, target, reason) {
   if (typeof response === "boolean") return `${target.user.tag} is banned!`;
   if (response === "BOT_PERM") return `I do not have permission to ban L bozo :sob: ${target.user.tag}`;
   else if (response === "MEMBER_PERM") return `You do not have permission to ban ${target.user.tag}`;
-  else return `Failed to ban :skull: ${target.user.tag}`;
+  else return `Failed to ban :skull: :sob: ${target.user.tag}`;
 }
