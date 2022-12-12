@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('discord.js');git
-const { Message, CommandInteraction } = require("discord.js");
 const { banTarget } = require("@utils/modUtils");
 const { resolveMember } = require("@utils/guildUtils");
 

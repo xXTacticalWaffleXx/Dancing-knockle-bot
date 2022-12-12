@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { join } = require("../features/join");
+const { join } = require("../utils/join");
 
 module.exports = {
 	data: new SlashCommandBuilder()
